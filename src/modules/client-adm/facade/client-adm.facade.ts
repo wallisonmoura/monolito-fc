@@ -19,8 +19,8 @@ export default class ClientAdmFacade implements ClientAdmFacadeInterface {
   async add(input: AddClientFacadeInputDTO): Promise<void> {
     await this._addUsecase.execute(input)
   }
-  find(input: FindClientFacadeInputDTO): Promise<FindClientOutputDTO> {
-    throw new Error("Method not implemented.");
+  async find(input: FindClientFacadeInputDTO): Promise<FindClientOutputDTO> {
+    return await this._findUsecase.execute(input)
   }
 
 }
