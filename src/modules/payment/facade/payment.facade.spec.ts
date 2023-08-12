@@ -1,8 +1,5 @@
 import { Sequelize } from "sequelize-typescript"
 import TransactionModel from "../repository/transaction.model"
-import TransactionRepository from "../repository/transaction.repository"
-import ProcessPaymentUsecase from "../usecase/process-payment/process-payment.usecase"
-import PaymentFacade from "./payment.facade"
 import PaymentFacadeFactory from "../factory/payment.facade.factory"
 
 describe('PaymentFacade test', () => {
